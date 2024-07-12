@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "E Smart book",
-          style: Theme.of(context).textTheme.labelLarge,
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: Colors.white),
         ),
         actions: [
           IconButton(

@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-// import 'package:lithabit/screens/screens_wrapper.dart';
 import 'package:lithabit/themes/app_theme.dart';
 import 'package:lithabit/screens/login/login.dart';
 
@@ -40,12 +39,14 @@ class _MyAppState extends State<MyApp> {
   }
 
   Widget _buildLoadingScreen() {
-    return Center(
-      child: Image.asset(
-        'assets/start.gif',
-        fit: BoxFit.contain,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
+    return Scaffold(
+      body: Center(
+        child: Image.asset(
+          'assets/bookLogin.gif',
+          fit: BoxFit.contain,
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+        ),
       ),
     );
   }

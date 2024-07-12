@@ -13,7 +13,8 @@ class ProfileScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "Profile",
-          style: Theme.of(context).textTheme.labelLarge,
+            style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: Colors.white)
+          ,
         ),
       ),
       body: const SingleChildScrollView(

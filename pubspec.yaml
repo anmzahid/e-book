@@ -35,6 +35,8 @@ flutter:
     - assets/harry_potter.pdf
     - assets/loader.gif
     - assets/start.gif
+    - assets/bookLogin.gif
+    - assets/images/img.png
 
 flutter_icons:
   android: true

@@ -19,7 +19,7 @@ class _FilterRowSectionState extends State<FilterRowSection> {
     Category.science,
     Category.technology,
   ];
-  Category selectedFilter = Category.artAndLit;
+  Category selectedFilter = Category.technology;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class _FilterRowSectionState extends State<FilterRowSection> {
                 getCategoryString(filter),
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
-                  fontSize: 22,
+                  fontSize: 19,
                   color: selectedFilter == filter ? Colors.black : Colors.grey[400],
                 ),
               ),

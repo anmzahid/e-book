@@ -10,7 +10,7 @@ class BioSection extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 40,
-          backgroundImage: AssetImage('assets/images/logo.png'), // Replace with your profile image
+          backgroundImage: AssetImage('assets/images/img.png'), // Replace with your profile image
         ),
         const SizedBox(width: 16),
         Expanded(
