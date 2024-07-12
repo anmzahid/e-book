@@ -9,40 +9,34 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Color(0xFF00c6ff), Color(0xFF0072ff)],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Center(
               child: Image.asset(
-                '../assets/images/bookLogin.png',
-                width: 100.0, // You can adjust the width as needed
-                height: 100.0, // You can adjust the height as needed
+                '../assets/images/bookLogin.gif', // Path to the GIF
+                width: 300.0, // Adjust the width as needed
+                height: 300.0, // Adjust the height as needed
               ),
             ),
             const SizedBox(height: 24.0), // Adjust spacing as needed
-            const Text(
-              'Welcome to APP',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 32.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            // const Text(
+            //   'Welcome to APP',
+            //   textAlign: TextAlign.center,
+            //   style: TextStyle(
+            //     color: Colors.black, // Changed to black for better contrast
+            //     fontSize: 32.0,
+            //     fontWeight: FontWeight.bold,
+            //   ),
+            // ),
             const SizedBox(height: 48.0),
             TextField(
               decoration: InputDecoration(
                 filled: true,
-                fillColor: Colors.white,
+                fillColor: Colors.grey[200], // Light grey background
                 labelText: 'Email',
+                labelStyle: TextStyle(color: Colors.black), // Black text color
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
@@ -52,8 +46,9 @@ class LoginPage extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 filled: true,
-                fillColor: Colors.white,
+                fillColor: Colors.grey[200], // Light grey background
                 labelText: 'Password',
+                labelStyle: TextStyle(color: Colors.black), // Black text color
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
@@ -67,8 +62,8 @@ class LoginPage extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
-                backgroundColor: Colors.white,
-                foregroundColor: Colors.blue,
+                backgroundColor: Colors.blue, // Blue background for button
+                foregroundColor: Colors.white, // White text color
                 textStyle: const TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
@@ -78,7 +73,8 @@ class LoginPage extends StatelessWidget {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const ScreensWrapper()),
+                    builder: (context) => const ScreensWrapper(),
+                  ),
                 );
               },
               child: const Text('Login'),
